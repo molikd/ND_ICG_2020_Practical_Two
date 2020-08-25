@@ -22,7 +22,7 @@ trimmomatic PE -threads 8 ${f1} ${f2} \
 done
 #velvet assembly for all trimmed paired end reads in directory. kmer length of 27
 velveth Assem 27 -fastq -separate -shortPaired  SRR2584863_1.trim.fastq SRR2584863_2.trim.fastq \
--shortPaired2 SRR2584866_1.trim.fastq SRR2584866_2.trim.fastq
+-shortPaired2 SRR2584866_1.trim.fastq SRR2584866_2.trim.fastq \
 -shortPaired3 SRR2589044_1.trim.fastq SRR2589044_2.trim.fastq
 
 #generate debrujin graph from velveth assembly. coverage must be at least 5x, contigs at least 100 bp. 
