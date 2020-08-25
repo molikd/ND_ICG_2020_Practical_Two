@@ -28,4 +28,4 @@ velveth Assem 27 -fastq -separate -shortPaired SRR2584863_1.trim.fastq SRR258486
 velvetg Assem -cov_cutoff 5 -min_contig_lgth 100
 
 #Output the contig N50 of the resulting assembly
-grep "n50" Assem/stats.txt
+grep "n50" Assem/Log
